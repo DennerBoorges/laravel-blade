@@ -17,3 +17,8 @@ Route::get('/hello', function () {
     $name = 'João';
     return view('/hello', compact('name'));
 });
+
+Route::get('/dbz', function () {
+    $energy = 8001;
+    return view('/dbz', compact('energy'));
+});
